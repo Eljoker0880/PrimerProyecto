@@ -29,24 +29,23 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
+            panel7 = new Panel();
+            button1 = new Button();
             panel5 = new Panel();
             panel6 = new Panel();
-            button1 = new Button();
-            panel7 = new Panel();
-            panel8 = new Panel();
-            panel9 = new Panel();
+            panel4 = new Panel();
+            panel3 = new Panel();
+            panel2 = new Panel();
             panel11 = new Panel();
             panel12 = new Panel();
-            dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
+            panel9 = new Panel();
+            panel8 = new Panel();
+            label1 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel8.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -63,31 +62,21 @@
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
-            // panel2
+            // panel7
             // 
-            panel2.Controls.Add(dataGridView1);
-            panel2.Controls.Add(panel11);
-            panel2.Controls.Add(panel12);
-            panel2.Controls.Add(panel9);
-            panel2.Controls.Add(panel8);
-            panel2.Location = new Point(468, 12);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(593, 576);
-            panel2.TabIndex = 1;
+            panel7.Location = new Point(14, 309);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(421, 47);
+            panel7.TabIndex = 3;
             // 
-            // panel3
+            // button1
             // 
-            panel3.Location = new Point(14, 16);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(421, 65);
-            panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            panel4.Location = new Point(14, 103);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(421, 47);
-            panel4.TabIndex = 1;
+            button1.Location = new Point(14, 394);
+            button1.Name = "button1";
+            button1.Size = new Size(421, 60);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -103,35 +92,31 @@
             panel6.Size = new Size(421, 47);
             panel6.TabIndex = 2;
             // 
-            // button1
+            // panel4
             // 
-            button1.Location = new Point(14, 394);
-            button1.Name = "button1";
-            button1.Size = new Size(421, 60);
-            button1.TabIndex = 3;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            panel4.Location = new Point(14, 103);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(421, 47);
+            panel4.TabIndex = 1;
             // 
-            // panel7
+            // panel3
             // 
-            panel7.Location = new Point(14, 309);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(421, 47);
-            panel7.TabIndex = 3;
+            panel3.Controls.Add(label1);
+            panel3.Location = new Point(14, 16);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(421, 65);
+            panel3.TabIndex = 0;
             // 
-            // panel8
+            // panel2
             // 
-            panel8.Location = new Point(6, 85);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(584, 77);
-            panel8.TabIndex = 1;
-            // 
-            // panel9
-            // 
-            panel9.Location = new Point(3, 402);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(587, 47);
-            panel9.TabIndex = 4;
+            panel2.Controls.Add(panel11);
+            panel2.Controls.Add(panel12);
+            panel2.Controls.Add(panel9);
+            panel2.Controls.Add(panel8);
+            panel2.Location = new Point(468, 12);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(593, 576);
+            panel2.TabIndex = 1;
             // 
             // panel11
             // 
@@ -147,30 +132,38 @@
             panel12.Size = new Size(584, 47);
             panel12.TabIndex = 5;
             // 
-            // dataGridView1
+            // panel9
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(96, 220);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(359, 150);
-            dataGridView1.TabIndex = 6;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            panel9.Location = new Point(3, 402);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(587, 47);
+            panel9.TabIndex = 4;
             // 
-            // Column1
+            // panel8
             // 
-            Column1.HeaderText = "Column1";
-            Column1.Name = "Column1";
+            panel8.Controls.Add(label2);
+            panel8.Location = new Point(6, 85);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(584, 77);
+            panel8.TabIndex = 1;
             // 
-            // Column2
+            // label1
             // 
-            Column2.HeaderText = "Column2";
-            Column2.Name = "Column2";
+            label1.AutoSize = true;
+            label1.Location = new Point(175, 21);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 0;
+            label1.Text = "label1";
             // 
-            // Column3
+            // label2
             // 
-            Column3.HeaderText = "Column3";
-            Column3.Name = "Column3";
+            label2.AutoSize = true;
+            label2.Location = new Point(267, 37);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 15);
+            label2.TabIndex = 0;
+            label2.Text = "label2";
             // 
             // Form1
             // 
@@ -182,8 +175,11 @@
             Name = "Form1";
             Text = "Form1";
             panel1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -201,9 +197,7 @@
         private Panel panel11;
         private Panel panel12;
         private Panel panel9;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
+        private Label label1;
+        private Label label2;
     }
 }
